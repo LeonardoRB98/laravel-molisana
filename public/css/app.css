@@ -1,0 +1,22 @@
+.list-inline {
+  list-style: none;
+}
+.list-inline li {
+  display: inline-block;
+  padding: 15px 10px;
+  margin: 10px;
+}
+.list-inline li a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+}
+header li {
+  font-size: 24px;
+  font-weight: 700;
+}
+header li a {
+  color: black;
+}
