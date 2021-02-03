@@ -7,19 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="{{ asset('img/marchio-sito-test.png') }}" alt="">
-        <ul class="list-inline">
-            <li><a href="#">home</a></li>
-            <li><a href="#">prodotti</a></li>
-            <li><a href="#">news</a></li>
-        </ul>
-    </header>
+    @include ('partials.header')
 
     <main>
+        <div class="container">
+            <div class="card_container">
+                <h2>LE LUNGHE</h2>
+                @foreach($lunghe as $lunga)
+                <div class="card">
+                    <img src=" {{ $lunga['src'] }} " alt="{{ $lunga['titolo'] }}">
+                </div>
+                @endforeach
+            </div>
+
+            <div class="card_container">
+                <h2>LE CORTE</h2>
+                @foreach($corte as $corta)
+                <div class="card">
+                    <img src=" {{ $corta['src'] }} " alt="{{ $corta['titolo'] }}">
+                </div>
+                @endforeach
+            </div>
+
+            <div class="card_container">
+                <h2>LE CORTISSIME</h2>
+                @foreach($cortissime as $cortissima)
+                <div class="card">
+                    <img src=" {{ $cortissima['src'] }} " alt="{{ $cortissima['titolo'] }}">
+                </div>
+                @endforeach
+            </div>
+
+        </div>
     </main>
 
-    <footer>
-    </footer>
+    @include ('partials.footer')
 </body>
 </html>

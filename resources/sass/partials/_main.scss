@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    background-color: beige;
+    .card_container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 20px auto;
+        
+        h2 {
+            width: 100%;
+            margin-left: 5px;
+        }
+
+        .card {
+            width: calc(30% - 20px);
+            margin: 10px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        
+    }
+}
